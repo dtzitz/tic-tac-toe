@@ -24,7 +24,7 @@ You will need the following things properly installed on your computer.
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-* I ripped out jshint and didn't replace it with anything. I am using standard inside my editor. You can undo this by running npm install --save-dev jshint
+* I ripped out jshint and didn't replace it with anything. I am using standard inside my editor. You can undo this by running `npm install --save-dev jshint`
 
 ### Code Generators
 
