@@ -15,9 +15,32 @@ body {
   float: left;
 }
 td{
-  padding:10px;
+  padding:50px;
+  border: 3px solid;
 }
 
-#00{
+#top-left{
   border-style: hidden solid solid hidden;
+}
+#top-center{
+  border-style: hidden solid solid;
+}
+#top-right{
+  border-style: hidden hidden solid solid;
+}
+#middle-left{
+  border-style: solid solid solid hidden;
+}
+// middle center inherits solid
+#middle-right{
+  border-style: solid hidden solid solid;
+}
+#bottom-left{
+  border-style: solid solid hidden hidden;
+}
+#bottom-center{
+  border-style: solid solid hidden;
+}
+#bottom-right{
+  border-style: solid hidden hidden solid;
 }
