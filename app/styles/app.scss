@@ -7,3 +7,17 @@ body {
   padding: 40px 15px;
   text-align: center;
 }
+
+.board{
+  border: 3px solid;
+}
+.square{
+  float: left;
+}
+td{
+  padding:10px;
+}
+
+#00{
+  border-style: hidden solid solid hidden;
+}
