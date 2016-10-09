@@ -1,20 +1,25 @@
-<div class="col-md-6 col-md-offset-4">
+<button class="btn btn-default" {{action 'newGame'}} >New Game</button>
+<div class="gameButtons">
+  <button class="btn btn-success">X</button> or <button class="btn btn-danger">O</button>
+</div>
+
+<div class="col-md-6 col-md-offset-3">
   <div class="table-responsive">
     <tbody>
       <tr>
-        <td id="top-left">x</td>
-        <td id="top-center">x</td>
-        <td id="top-right">x</td>
+        <td id="top-left" {{action 'buttonClicked' 'topLeft'}} > {{topLeft}} </td>
+        <td id="top-center" {{action 'buttonClicked' 'topCenter'}}> {{topCenter}} </td>
+        <td id="top-right"{{action 'buttonClicked' 'topRight'}}> {{topRight}} </td>
       </tr>
       <tr>
-        <td id="middle-left">x</td>
-        <td id="middle-center">x</td>
-        <td id="middle-right">x</td>
+        <td id="middle-left" {{action 'buttonClicked' 'middleLeft'}}> {{middleLeft}} </td>
+        <td id="middle-center" {{action 'buttonClicked' 'center'}}> {{center}} </td>
+        <td id="middle-right" {{action 'buttonClicked' 'middleRight'}}> {{middleRight}} </td>
       </tr>
       <tr>
-        <td id="bottom-left">x</td>
-        <td id="bottom-center">x</td>
-        <td id="bottom-right">x</td>
+        <td id="bottom-left" {{action 'buttonClicked' 'bottomLeft'}}> {{bottomLeft}} </td>
+        <td id="bottom-center" {{action 'buttonClicked' 'bottomCenter'}}> {{bottomCenter}} </td>
+        <td id="bottom-right" {{action 'buttonClicked' 'bottomRight'}}> {{bottomRight}} </td>
       </tr>
     </tbody>
   </div>
