@@ -3,6 +3,7 @@ import Ember from 'ember'
 export default Ember.Component.extend({
     gameWon: false,
     gamePiece:'',
+    userTurn:'newGame',
     
     topLeft:'',
     topCenter:'',
@@ -16,7 +17,11 @@ export default Ember.Component.extend({
 
     actions:{
         buttonClicked(param){
-            this.set(param,'x')
+            this.set(param, this.gamePiece)
+            
+        },
+        setGamePiece(piece){
+            this.set('gamePiece', piece)
         },
         newGame(param){
             this.set('topLeft',''),
